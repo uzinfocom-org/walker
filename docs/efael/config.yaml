@@ -1,0 +1,9 @@
+# Efael Defaults
+from: markdown
+to: docx
+
+output-file: ./efael.docx
+input-file: ./docs/efael/main.md
+
+resource-path:
+  - ./docs/efael
