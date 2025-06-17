@@ -22,9 +22,10 @@ in
     ];
 
     buildPhase = ''
-      # Convert markdown
-      pandoc -d ./docs/efael/config.yaml
-      pandoc -d ./docs/xinux/config.yaml
+      # Convert to markdown files
+      for d in ./docs/* ; do
+       pandoc -d $d/${pname}.yaml
+      done
     '';
 
     installPhase = ''
@@ -32,8 +33,7 @@ in
       mkdir -p $out/docx
 
       # Move content to output
-      mv ./efael.${pname} $out/docx
-      mv ./xinux.${pname} $out/docx
+      mv ./*.${pname} $out/docx
     '';
 
     meta = {

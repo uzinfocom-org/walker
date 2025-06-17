@@ -3,7 +3,7 @@ from: markdown
 to: docx
 
 output-file: ./xinux.docx
-input-file: main.md
+input-file: ./docs/xinux/main.md
 
 resource-path:
   - ./docs/xinux

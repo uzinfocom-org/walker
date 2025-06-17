@@ -1,5 +1,4 @@
 ---
-lang: uz-UZ
 fontfamily: T
 indent: 2m
 lineheight: 12p
